@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image gallery with modal</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Photo Gallery</h1>
+    </div>
+    <div id="mother_container">
+      <a href="#"><img src="images/img1.jpg" class="modal_photo"/></a>
+      <a href="#"><img src="images/img2.jpg" class="modal_photo"/></a>
+      <a href="#"><img src="images/img3.jpg" class="modal_photo"/></a>
+      <a href="#"><img src="images/img4.jpg" class="modal_photo"/></a>
+      <a href="#"><img src="images/img5.jpg" class="modal_photo"/></a>
+      <a href="#"><img src="images/img6.jpg" class="modal_photo"/></a>
+      <a href="#"><img src="images/Img7.jpg" class="modal_photo"/></a>
+      <a href="#"><img src="images/img8.jpg" class="modal_photo"/></a>
+      <a href="#"><img src="images/img9.jpg" class="modal_photo"/></a>
+    </div>
+    <!--end of mother_container-->
+
+    <div class="modal" id="simple_modal">
+      <!--start of modal-->
+
+      <div class="modal_content">
+        <img id="to_fill" src="" />
+        <span class="close_button" id="close_btn">&times;</span>
+      </div>
+    </div>
+    <!--end of modal-->
+
+    <script src="script.js"></script>
+  </body>
+</html>

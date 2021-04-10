@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+/*---------------------------GENERAL STYLING SMALL SCREENS--------------------*/
+/*----------------------------------------------------------------------------*/
+.header {
+  margin: 1.5rem auto 0;
+  max-width: 80%;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 2.5rem;
+}
+
+#mother_container {
+  margin: 2rem auto;
+  display: grid;
+  max-width: 80%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+#mother_container img {
+  transition: 1s;
+}
+
+#mother_container img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal_content {
+  position: relative;
+  background: #f4f4f4;
+  margin: 10% auto;
+  padding: 20px;
+  width: 70%;
+  overflow: hidden;
+  box-shadow: 0 0.8px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+.close_button {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: #ccc;
+  font-size: 50px;
+  z-index: 50;
+}
+
+.close_button:hover,
+.close_button:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
